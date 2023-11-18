@@ -37,6 +37,7 @@ fun MainNavFunctionPreview() {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        CustomNavigation()
+//        CustomNavigation()
+        CustomNav2()
     }
 }

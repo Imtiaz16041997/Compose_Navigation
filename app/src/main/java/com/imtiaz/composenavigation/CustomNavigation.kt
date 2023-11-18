@@ -99,3 +99,13 @@ fun DetailScreen(name: String?){
         Text(text = "Hello $name")
     }
 }
+
+
+/*
+* NavHost - The NavHost composable is responsible for hosting the content of the
+* NavDestination associated with the NavBackStackEntry (we will look at the details in a bit!).
+* NavGraph - suppose you stay in the first page, and which destination you can go that defined by NavGraph
+* NavController - NavHost and NavGraph Interaction handle, also it manage backstack
+*
+*
+* */
