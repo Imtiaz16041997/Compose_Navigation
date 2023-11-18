@@ -26,7 +26,10 @@ fun CustomNav2(){
         }
 
         composable(route = "registration"){
-            RegistrationScreen(navController)
+//            RegistrationScreen(navController)
+            RegistrationScreen{
+                navController.navigate("main")
+            }
         }
     }
 
@@ -34,10 +37,10 @@ fun CustomNav2(){
 
 
 @Composable
-fun RegistrationScreen(navController: NavController){
+fun RegistrationScreen(/*navController: NavController*/onClick: ()-> Unit){
     Text(text = "Registration", style = MaterialTheme.typography.headlineLarge,
         modifier = Modifier.clickable {
-            navController.navigate("login")
+            onClick()
         })
 }
 
